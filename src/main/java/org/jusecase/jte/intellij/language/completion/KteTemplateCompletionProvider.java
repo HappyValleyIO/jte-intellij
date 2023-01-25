@@ -20,7 +20,7 @@ import java.util.List;
 public class KteTemplateCompletionProvider extends AbstractTemplateCompletionProvider {
 
     protected KteTemplateCompletionProvider() {
-        super(".kte");
+        super(".kte.html");
     }
 
     @Override

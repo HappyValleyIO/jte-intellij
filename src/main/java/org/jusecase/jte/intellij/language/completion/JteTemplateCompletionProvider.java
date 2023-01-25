@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class JteTemplateCompletionProvider extends AbstractTemplateCompletionProvider {
 
     protected JteTemplateCompletionProvider() {
-        super(".jte");
+        super(".jte.html");
     }
 
     @Override

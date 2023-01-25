@@ -14,7 +14,7 @@ public class JteCompletionContributorForJava extends CompletionContributor {
         extend(null, psiElement().with(new PatternCondition<PsiElement>("JteFile") {
             @Override
             public boolean accepts(@NotNull PsiElement element, ProcessingContext context) {
-                return element.getContainingFile() != null && element.getContainingFile().getName().endsWith(".jte");
+                return element.getContainingFile() != null && element.getContainingFile().getName().endsWith(".jte.html");
             }
         }), new JteTemplateParamCompletionProvider(true));
     }

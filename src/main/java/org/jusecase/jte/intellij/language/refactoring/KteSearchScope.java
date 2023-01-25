@@ -26,7 +26,7 @@ public class KteSearchScope extends GlobalSearchScope {
 
     @Override
     public boolean contains(@NotNull VirtualFile file) {
-        if (file.getName().endsWith(".kte")) {
+        if (file.getName().endsWith(".kte.html")) {
             return projectScope.contains(file);
         }
 

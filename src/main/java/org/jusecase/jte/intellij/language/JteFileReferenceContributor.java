@@ -171,7 +171,7 @@ public class JteFileReferenceContributor extends PsiReferenceContributor {
          }
 
          String stringValue = (String)value;
-         return stringValue.endsWith(".jte") || stringValue.endsWith(".kte");
+         return stringValue.endsWith(".jte.html") || stringValue.endsWith(".kte.html");
       }
 
       public boolean isClassAcceptable( Class aClass ) {
@@ -195,7 +195,7 @@ public class JteFileReferenceContributor extends PsiReferenceContributor {
          }
 
          String stringValue = entry.getText();
-         return stringValue.endsWith(".jte") || stringValue.endsWith(".kte");
+         return stringValue.endsWith(".jte.html") || stringValue.endsWith(".kte.html");
       }
 
       public boolean isClassAcceptable( Class aClass ) {

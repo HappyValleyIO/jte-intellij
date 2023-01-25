@@ -84,7 +84,7 @@ public class JteParserDefinition implements ParserDefinition {
         } else if (elementType == JteTokenTypes.TEMPLATE) {
             return new JtePsiTemplate(node);
         } else if (elementType == JteTokenTypes.TEMPLATE_NAME) {
-            return new JtePsiTemplateName(node, ".jte");
+            return new JtePsiTemplateName(node, ".jte.html");
         } else if (elementType == JteTokenTypes.PARAMS_BEGIN) {
             return new JtePsiParamsBegin(node);
         } else if (elementType == JteTokenTypes.PARAMS_END) {

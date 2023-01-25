@@ -12,7 +12,7 @@ public class JteHighlightVisitor extends HighlightVisitorImpl {
             return false;
         }
 
-        return file.getName().endsWith(".jte") && file instanceof PsiJavaFile;
+        return file.getName().endsWith(".jte.html") && file instanceof PsiJavaFile;
     }
 
     @NotNull

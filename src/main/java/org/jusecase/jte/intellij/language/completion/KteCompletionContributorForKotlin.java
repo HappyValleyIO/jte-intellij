@@ -14,7 +14,7 @@ public class KteCompletionContributorForKotlin extends CompletionContributor {
         extend(null, psiElement().with(new PatternCondition<PsiElement>("KteFile") {
             @Override
             public boolean accepts(@NotNull PsiElement element, ProcessingContext context) {
-                return element.getContainingFile() != null && element.getContainingFile().getName().endsWith(".kte");
+                return element.getContainingFile() != null && element.getContainingFile().getName().endsWith(".kte.html");
             }
         }), new KteTemplateParamCompletionProvider(true));
     }

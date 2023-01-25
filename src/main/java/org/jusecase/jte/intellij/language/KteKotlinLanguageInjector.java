@@ -151,7 +151,7 @@ public class KteKotlinLanguageInjector implements MultiHostInjector {
 
             FileEditor[] editors = FileEditorManager.getInstance(host.getProject()).getAllEditors(virtualFile);
             for (FileEditor fileEditor : editors) {
-                if (fileEditor.getFile() == null || !fileEditor.getFile().getName().endsWith(".kte")) {
+                if (fileEditor.getFile() == null || !fileEditor.getFile().getName().endsWith(".kte.html")) {
                     continue;
                 }
 

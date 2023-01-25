@@ -19,7 +19,7 @@ public class JteUseScopeEnlarger extends UseScopeEnlarger {
                 return null;
             }
 
-            if (!containingFile.getName().endsWith(".jte")) {
+            if (!containingFile.getName().endsWith(".jte.html")) {
                 return null;
             }
 
@@ -30,7 +30,7 @@ public class JteUseScopeEnlarger extends UseScopeEnlarger {
                 return null;
             }
 
-            if (!containingFile.getName().endsWith(".kte")) {
+            if (!containingFile.getName().endsWith(".kte.html")) {
                 return null;
             }
 

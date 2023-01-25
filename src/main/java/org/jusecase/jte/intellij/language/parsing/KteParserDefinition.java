@@ -84,7 +84,7 @@ public class KteParserDefinition implements ParserDefinition {
         } else if (elementType == KteTokenTypes.TEMPLATE) {
             return new JtePsiTemplate(node);
         } else if (elementType == KteTokenTypes.TEMPLATE_NAME) {
-            return new JtePsiTemplateName(node, ".kte");
+            return new JtePsiTemplateName(node, ".kte.html");
         } else if (elementType == KteTokenTypes.PARAMS_BEGIN) {
             return new JtePsiParamsBegin(node);
         } else if (elementType == KteTokenTypes.PARAMS_END) {
